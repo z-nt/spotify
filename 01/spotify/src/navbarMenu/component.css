@@ -1,0 +1,19 @@
+
+
+.LoginButton {
+  border :none ;
+  width:13vh;
+  height:4.5vh;
+  border-radius :24px;
+  text-align:center;
+  font-size : 16px; 
+  color:darkblue;
+  background-color:white;
+  position:relative;
+  margin : 2px;
+  font-weight:bold;
+}
+
+
+
+
