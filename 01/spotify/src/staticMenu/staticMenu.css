@@ -2,10 +2,12 @@
 
 
 .staticMenu {
-  border :1px solid red ;
-  width :30%;
-  height:100vh; 
-  margin:0.2px;
+  border :none ;
+  width :30%;  
+ margin:0.2px;
   border-radius :12px;
+background: #1b1e21;
+background: linear-gradient(120deg, rgba(27, 30, 33, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
 
 }

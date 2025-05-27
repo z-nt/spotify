@@ -1,9 +1,12 @@
 
 
 
-.dynamicPage {
-	border :1px solid red ;
-	width:69%;
+.dynamicPage {	
+	width:69.5%;
+	height:100%;
 	border-radius :12px;
-
+	color:white;	
+	background: #1b1e21;
+background: linear-gradient(81deg, rgba(27, 30, 33, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
+

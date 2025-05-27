@@ -19,3 +19,33 @@ function NewButton({text , onClick , disable, className }){
 
 
 export default NewButton;
+
+
+function Textfield(){
+	return (
+		<input/>
+
+	)
+	
+}
+
+export default Textfield;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
