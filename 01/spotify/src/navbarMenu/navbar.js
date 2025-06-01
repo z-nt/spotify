@@ -1,8 +1,13 @@
+import * as React  from "react";
 import "./navbar.css"
 import "./component.css"
+import {NewButton ,
+	SearchInput ,
+	HomeIcon,
+	SpotifySVG
+}  from "./components.js"
 
-import NewButton  from   "./components.js"
-import Textfield from "./compoenents.js"
+ 
 
 
 
@@ -15,7 +20,15 @@ function NavbarMenu (){
 	};
 	return (
 	<div className = "navbarMenu" >
-		<h1>Logo</h1>
+			<div className="Logo">
+				<SpotifySVG/>
+			</div>
+
+
+			<HomeIcon/>
+		<div className = "inputContaienr">
+			<SearchInput/>
+		</div> 
 		<ul className="navbarList" >
 		  <li className="navbarItems">		
 			<NewButton
@@ -43,12 +56,14 @@ function NavbarMenu (){
 		</li>
 		  <li className="navbarItems">
 			<NewButton
+			 onClick={signup}
 			 className="SignUp textButtons " 
 			 text="Sign up"
 			/>
 		</li>	
 		  <li className="navbarItems">
 			<NewButton
+			 onClick={Login}
 			 className="LoginButton " 
 			 text="Log in "
 			/>

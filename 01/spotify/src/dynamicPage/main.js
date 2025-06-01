@@ -6,9 +6,10 @@ import "./main.css";
 function DynamicPage () {
 	return (
 		<div className ="dynamicPage" >
-			
-		</div>
-		
+			<div className="sliderContainer">
+					
+			</div>	
+		</div>	
 	)
 
 }

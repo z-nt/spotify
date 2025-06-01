@@ -6,7 +6,7 @@
 
 
 .navbarMenu {
- border : 1px solid red ;
+ border : none ;
  width : 100%; 
 height:80px; 
  background :#000000;
@@ -56,5 +56,20 @@ height:80px;
  font-size:20px;
  letter-spacing:1px;
 }
+
+
+.Logo{
+	border:none ;
+	position:relative;
+	margin:16px;
+}
+
+
+
+
+
+
+
+
 
 
