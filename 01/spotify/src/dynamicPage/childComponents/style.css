@@ -1,0 +1,35 @@
+
+.trendingContainer {
+ border:1px solid red ; 
+ width:100%;
+ height:20vh; 
+ position :relative;
+ background-color:transparent;
+}
+
+.header{
+ border:1px solid red ;
+ background:none;
+ display:flex;
+ flex-direction:row;
+ justify-content:space-between;
+ margin : 2px auto;
+}
+ 
+
+.header h1 {
+ background:none;
+}
+
+.slider {
+ border :1px solid green;
+ width:100%; 
+ position:relative;
+ height:auto;
+}
+
+
+
+
+
+
