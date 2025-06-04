@@ -7,7 +7,7 @@ import "./cardStyle.css";
 		   <div className = "card" >
 			<span>
 			   <img src={props.imgUrl}  />  
-			   <button onClick={props.handelClick} >
+			   <button className='playButton' onClick={props.handelClick} >
 			      play
 		 	   </button>
 			</span> 

@@ -1,20 +1,20 @@
 .cards-container {
-  display: flex;
-  border-radius: 6px;
-  color: #333;
-  background: #eee;
+  border:none ;
+  display: flex; 
+  color: #ccc;
   padding: 1rem;
-  box-shadow: 0 0 1rem #000 inset;
+  box-shadow: none;
   overflow-x: auto;
   position: relative;
-  
+  background: #1b1e21;
+  background: linear-gradient(81deg, rgba(27, 30, 33, 1) 0%, rgba(0, 0, 0, 1) 100%);
   &::-webkit-scrollbar {
     display: none;
   }
 }
 
 .card {
-  flex: 1 0 250px;
+  flex: 1 0 200px;
   box-shadow: 0 1px 1rem -4px #000;
   background: #fff;
   margin: 1rem;
@@ -24,8 +24,8 @@
   transition: all 250ms ease-in-out;
   
   img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     object-fit: center;
   }
   
