@@ -5,12 +5,12 @@ import "./cardStyle.css";
 	return (
 		<>	
 		   <div className = "card" >
-			<span>
+			<div className="imgContainer" >
 			   <img src={props.imgUrl}  />  
 			   <button className='playButton' onClick={props.handelClick} >
-			      play
+			      <i className="fas fa-play-circle  play-btn "  > </i>
 		 	   </button>
-			</span> 
+			</div> 
 			<h4>{props.title}</h4> 
 		        <h5>{props.content}</h5>
 		   </div>

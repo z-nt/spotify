@@ -7,9 +7,9 @@ import TrendingSongs from "./childComponents/Trending.js";
 function DynamicPage () {
 	return (
 		<div className ="dynamicPage" >
-			<TrendingSongs/>
-					
-			
+			<div className="TrendingContainer"  >
+				<TrendingSongs/>					
+			</div>					
 		</div>	
 	)
 

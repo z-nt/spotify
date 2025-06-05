@@ -7,12 +7,13 @@
 }
 
 .header{
- border:none;
- background:none;
+ border:none ; 
  display:flex;
  flex-direction:row;
  justify-content:space-between;
  margin : 2px auto;
+ background-color:transparent;
+ 
 }
  
 
@@ -27,8 +28,19 @@
  background-color:transparent;
 }
 
+.show {
+ border:none ;
+ background-color:transparent;
+ color:#ccc;
+ background:none;
+ font-size:16px;
+ font-weight:bold;
+ transition:all .5s ease;
+ margin-right:1rem;
+}
 
-
-
-
+.show:hover {
+cursor:pointer;
+color:#fff;
+}
 

@@ -13,27 +13,110 @@
   }
 }
 
+.imgContainer{
+  border:none;
+  border-radius:24px;
+  position :relative;
+  width : 100%;
+  height:85%;
+}
+
+
+
+.playButton{
+	border:none;
+	width:3rem;
+	height:3rem;
+	background-color:#059212;
+	color:white;
+	border-radius:50%;
+	font-size:28px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	transition: all  .4s  ease;
+	position:absolute;
+	opacity:0;
+	bottom:0.5rem;
+	right:0.5rem;
+  .play-btn{
+      color:#333;
+      background-color:transparent; 
+      
+  }
+}
+
+
+
+
+
+
+
+
+
 .card {
-  flex: 1 0 200px;
-  box-shadow: 0 1px 1rem -4px #000;
-  background: #fff;
+  flex: 0  0 200px;
+  background: transparent;
   margin: 1rem;
   overflow: hidden;
   border-radius: 6px;
   cursor: pointer;
   transition: all 250ms ease-in-out;
-  
+  border:none ;
+  padding:1rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center; 
+
   img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     object-fit: center;
+    border-radius:12px;
   }
+  h4 , h5  {
+   border:none ;
+   width:100%;
+   background:none;
+   margin-top:1rem; 
   
+  }
+ 
+
+
+
+
+
+
+
   &:hover {
-    box-shadow: 0 4px 1rem -4px #000;
-    transform: translateY(-3px);
+   background: #38312f;
+background: linear-gradient(356deg, rgba(56, 49, 47, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    
+    
+  }
+  &:hover .playButton {
+   display:flex;
+   opacity:3; 
   }
 }
+
+.playButton:hover {
+   color:black;
+   background-color:#06D001;
+   transform:scale(1.09);
+   cursor:pointer;
+
+
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 625px) {
   .container {
