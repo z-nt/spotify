@@ -7,10 +7,12 @@
   overflow-x: auto;
   position: relative;
   background: #1b1e21;
+  scrollbar-width:none;
   background: linear-gradient(81deg, rgba(27, 30, 33, 1) 0%, rgba(0, 0, 0, 1) 100%);
   &::-webkit-scrollbar {
     display: none;
   }
+
 }
 
 .imgContainer{
@@ -132,7 +134,30 @@ background: linear-gradient(356deg, rgba(56, 49, 47, 1) 0%, rgba(0, 0, 0, 1) 100
   }
 }
 
+.scroll-container{
+ border:1px solid red ;
+ display:flex ; 
+ flex-direction :row;
+ justify-content :space-between;
+ height:3rem;
+ border:1px solid red ;
+ background-color:none;
+ background:transparent;
+ scroll-behavior:smooth;
+ overflow-x:auto;
+ position:absolute;
+ margin:2rem auto;
+.scroll-button{
+    border:1px solid red ;
+    width:3rem;
+    color:#fff;
+    font-size:1rem;
 
+
+
+ }
+
+}
 
 
 

@@ -1,5 +1,42 @@
-import React from "react";
+import React , {useRef} from "react";
 import "./cardStyle.css";
+
+
+
+export 	function HorizontalScroll () {
+  const scrollRef = useRef(null);
+  const scrollAmount = 300;
+
+	const scrollLeft = () => {
+		scrollRef.current.scrollBy ({left:-scrollAmount, behavior:" smooth "  });
+	}
+
+	const scrollRight = () => {
+	scrollRef.current.scrollBy({left:scrollAmount , behavior:"smooth" });
+
+	}
+
+	return (
+		<div className="scroll-container">
+	        	   <button
+		            className="scroll-button left "
+		            onClick={scrollLeft}
+				>
+				<i className="fas fa-arrow-left" ></i>
+		   </button>	
+
+			
+	           <button className="scroll-button right " onClick={scrollRight} >
+		  	
+				<i className="fas fa-arrow-right" ></i>
+		  
+		   </button>	
+		</div>
+	)
+}
+
+
+
 
  function  Card ( props ) {
 	return (
@@ -18,7 +55,7 @@ import "./cardStyle.css";
 	)
 } 
 
-export default  function CardContainer(props){
+export   function CardContainer(props){
 
 	return (
 	    <div className = "cards-container" >
