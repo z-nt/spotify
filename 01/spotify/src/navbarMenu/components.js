@@ -1,8 +1,5 @@
 import React from "react";
 
-
-
-
 export function NewButton({text , onClick , disable, className }){
 	return (
 	 <button
@@ -41,11 +38,6 @@ export function HomeIcon(){
 		</div>
 	)
 }
-
-
-
-
-
 
 
 export function SpotifySVG() {
