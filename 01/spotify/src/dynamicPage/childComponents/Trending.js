@@ -2,8 +2,7 @@
 import React from "react";
 import "./style.css";
 import Slidercard from "./component.js";
-
-
+import {HorizontallScroll} from "./card.js";
 function TrendingSongs () {
 	return (
 		<>
@@ -15,7 +14,9 @@ function TrendingSongs () {
 					</button>	
 				</div>		
 				<div  className="slider">
-					<Slidercard/>			
+					<HorizontallScroll>
+					   <Slidercard/>	
+					</HorizontallScroll>
 				</div>
 
 			</div>

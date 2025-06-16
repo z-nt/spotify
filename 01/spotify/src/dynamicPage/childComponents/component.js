@@ -1,5 +1,5 @@
 import React from "react";
-import {CardContainer,HorizontalScroll} from "./card.js";
+import {CardContainer} from "./card.js";
 //import TrendCard from "./data.js";
 import song from "./dataCenter/data.js";
 
@@ -10,8 +10,9 @@ const albums = list[0].albums.songs;
 	return (
 		<>
 			<div className = 'container'>
+				
 				<CardContainer cards={albums} />
-				<HorizontalScroll/>
+			
 			</div> 				
 		</>
 

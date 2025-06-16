@@ -3,34 +3,38 @@ import "./cardStyle.css";
 import song from "./dataCenter/data.js";
 
 
-export 	function HorizontalScroll () {
+export 	function HorizontallScroll ({children}) {
   const scrollRef = useRef(null);
-  const scrollAmount = 300;
+  const scrollAmount = 200;
+
 
 	const scrollLeft = () => {
-		scrollRef.current.scrollBy ({left:-scrollAmount, behavior:" smooth "  });
+	if (scrollRef.current){	
+	scrollRef.current.scrollBy ({left:-scrollAmount,behavior:"smooth"});
+	}
 	}
 
-	const scrollRight = () => {
-	scrollRef.current.scrollBy({left:scrollAmount , behavior:"smooth" });
 
+	const scrollRight = () => {
+		if(scrollRef.current){
+	scrollRef.current.scrollBy({left:scrollAmount,behavior:"smooth"});
+	}
 	}
 
 	return (
 		<div className="scroll-container">
-	        	   <button
-		            className="scroll-button left "
-		            onClick={scrollLeft}
-				>
-				<i className="fas fa-arrow-left" ></i>
-		   </button>	
+	       
+	   <button className="scroll-button left" onClick={scrollLeft}>
+		 <i className="fas fa-arrow-left" ></i>
+	   </button>	
 
-			
-	           <button className="scroll-button right " onClick={scrollRight} >
-		  	
-				<i className="fas fa-arrow-right" ></i>
-		  
-		   </button>	
+		<div className="scroll-content" ref={scrollRef}>
+		{children}
+		</div>
+
+	   <button className="scroll-button right " onClick={scrollRight} >	  			<i className="fas fa-arrow-right" ></i>
+	   </button>	
+	
 		</div>
 	)
 }
@@ -45,7 +49,7 @@ export 	function HorizontalScroll () {
 		   <div className = "card" >
 			<div className="imgContainer" >
 			   <img src={props.imgUrl}  />  
-			   <button className='playButton' onClick={props.handelClick} >
+	 <button className='playButton' onClick={props.handelClick} >
 	<i className="fas fa-play-circle  play-btn "> </i>
 		 	   </button>
 			</div> 
@@ -55,7 +59,7 @@ export 	function HorizontalScroll () {
 		   </div>
 		</>
 	)
-} 
+}; 
 export   function CardContainer(props){
 	return (
 	    <div className = "cards-container" >
@@ -72,7 +76,7 @@ export   function CardContainer(props){
 		}
 	    </div>
 	)
-}
+};
 
 
 
