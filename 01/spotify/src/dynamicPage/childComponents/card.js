@@ -1,6 +1,6 @@
 import React , {useRef} from "react";
 import "./cardStyle.css";
-
+import song from "./dataCenter/data.js";
 
 
 export 	function HorizontalScroll () {
@@ -38,25 +38,25 @@ export 	function HorizontalScroll () {
 
 
 
- function  Card ( props ) {
+ function  Card ( props ) { 
+	
 	return (
 		<>	
 		   <div className = "card" >
 			<div className="imgContainer" >
 			   <img src={props.imgUrl}  />  
 			   <button className='playButton' onClick={props.handelClick} >
-			      <i className="fas fa-play-circle  play-btn "  > </i>
+	<i className="fas fa-play-circle  play-btn "> </i>
 		 	   </button>
 			</div> 
 			<h4>{props.title}</h4> 
 		        <h5>{props.content}</h5>
+			<h4>{props.albumstitle}_{props.time}</h4>
 		   </div>
 		</>
 	)
 } 
-
 export   function CardContainer(props){
-
 	return (
 	    <div className = "cards-container" >
 		{ 
@@ -65,6 +65,8 @@ export   function CardContainer(props){
 		          title={card.title}
 			  content={card.content} 
 			  imgUrl ={card.imgUrl}
+			  time = {card.time} 
+			  albumstitle={card.albumstitle}
 			/> 
 		  ))
 		}
