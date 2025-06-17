@@ -1,0 +1,19 @@
+
+
+
+
+
+.plusButton {
+ border:none ;
+ width:2rem;
+ height:2rem;
+ color:#ccc;
+ background:transparent;
+ font-size:24px;
+ margin:1rem;
+ background-color:transparent;
+}
+
+.plusButton i {
+ background:transparent;
+}

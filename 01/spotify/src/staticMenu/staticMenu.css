@@ -4,10 +4,29 @@
 .staticMenu {
   border :none ;
   width :30%;  
- margin:0.2px;
+  margin:0.2px;
   border-radius :12px;
-background: #1b1e21;
-background: linear-gradient(120deg, rgba(27, 30, 33, 1) 0%, rgba(0, 0, 0, 1) 100%);
-
-
+  background: #1b1e21;
+  background: linear-gradient(120deg, rgba(27, 30, 33, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
+
+.headerStaticMenu{
+ border:1px solid red ;
+ background:transparent;
+ display:flex;
+ justify-content:space-between;
+ flex-direction:row;
+ align-items:center;
+ background-color:transparent;
+}
+
+
+.headerStaticMenu h4 {
+ background-color:transparent;
+ border:none;
+ font-size:2rem;
+ color:white;
+ margin:0.8rem;
+}
+
+
