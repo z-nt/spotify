@@ -5,13 +5,15 @@
   border :none ;
   width :30%;  
   margin:0.2px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
   border-radius :12px;
   background: #1b1e21;
   background: linear-gradient(120deg, rgba(27, 30, 33, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 .headerStaticMenu{
- border:1px solid red ;
  background:transparent;
  display:flex;
  justify-content:space-between;
@@ -28,5 +30,64 @@
  color:white;
  margin:0.8rem;
 }
+.componentsContainer{
+ background:none
+}
+
+.staticFooter{
+ display:flex;
+ position:relative;
+ background:none;
+ box-sizing:border-box;
+ margin-bottom:4rem;
+ ul{
+  position:relative;
+  background:none;
+  display:flex;
+  flex-direction:row;
+  margin-bottom:2rem;
+  justify-content:space-between;
+  list-style-type:none;
+   li{
+    background:none;
+    position:relative;
+    color:#666;
+    display:flex;
+    font-size:1rem;
+    font-weight:bold;
+   } 
+ }
+ h4{
+  background:none;
+  color:#ffffff;
+  width:4rem;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,8 +1,3 @@
-
-
-
-
-
 .plusButton {
  border:none ;
  width:2rem;
@@ -13,7 +8,44 @@
  margin:1rem;
  background-color:transparent;
 }
-
 .plusButton i {
  background:transparent;
 }
+.staticTextStyle{
+ border:none;
+ background:transparent; 
+ background-color:transparent;
+ display:flex;
+ flex-direction:column;
+ justify-content:space-evenly;
+ align-items:left;
+ width:100%;
+ height:10rem;
+ padding-left:1rem;
+  h4{
+   border:none ;
+   background:none;
+   color:#ffffff;
+   font-size:1.5rem;
+   font-weight:bold;
+ }
+  p{
+   background:none; 
+   color:#ccc;
+   font-weight:bold;
+   }
+  .staticButtons{
+   background:#fff;
+   color:#000;
+   font-size:1rem;
+   font-weight:bold;
+   width:9rem;
+   height:2.5rem;
+   border-radius:1rem;
+   border:none;
+   cursor:pointer;
+  }
+}
+
+
+
