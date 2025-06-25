@@ -1,6 +1,5 @@
 
 .trendingContainer {
- border:none ; 
  width:100%;
  position :relative;
  background-color:transparent;
@@ -22,11 +21,11 @@
 }
 
 .slider {
- border :none;
  width:100%; 
  height:auto;
  background-color:transparent;
 }
+
 
 .show {
  border:none ;

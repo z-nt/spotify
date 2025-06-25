@@ -1,5 +1,4 @@
 .cards-container {
-  border:none ;
   display: flex; 
   color: #ccc;
   padding: 1rem;
@@ -22,9 +21,6 @@
   width : 100%;
   height:85%;
 }
-
-
-
 .playButton{
 	border:none;
 	width:3rem;
@@ -44,18 +40,8 @@
   .play-btn{
       color:#333;
       background-color:transparent; 
-      
   }
 }
-
-
-
-
-
-
-
-
-
 .card {
   flex: 0  0 200px;
   background: transparent;
@@ -85,57 +71,33 @@
   
   }
  
-
-
-
-
-
-
-
   &:hover {
    background: #38312f;
 background: linear-gradient(356deg, rgba(56, 49, 47, 1) 0%, rgba(0, 0, 0, 1) 100%);
-    
-    
   }
   &:hover .playButton {
    display:flex;
    opacity:3; 
   }
 }
-
 .playButton:hover {
    color:black;
    background-color:#06D001;
    transform:scale(1.09);
    cursor:pointer;
-
-
 }
-
-
-
-
-
-
-
-
 @media screen and (max-width: 625px) {
   .container {
     width: 100%
   }
-  
   .cards-container {
     padding: .5rem;
   }
-  
   .card {
     margin: .5rem;
   }
 }
-
 .scroll-container{
- border:none ;
  display:flex ; 
  flex-direction :row;
  justify-content :space-between;
@@ -145,8 +107,8 @@ background: linear-gradient(356deg, rgba(56, 49, 47, 1) 0%, rgba(0, 0, 0, 1) 100
  background:transparent;
  scroll-behavior:smooth;
  overflow-x:auto;
- position:absolute;
  margin:2rem auto;
+ position:relative;
 .scroll-button{
     width:45px;
     position:absolute;
@@ -164,23 +126,14 @@ background: linear-gradient(356deg, rgba(56, 49, 47, 1) 0%, rgba(0, 0, 0, 1) 100
     height:45px;
     border-radius:50%;
     z-index:1;
- 
  }
 }
-
 .scroll-container .left{
  left:1rem;
 }
-
 .scroll-container .right{
  right:1rem;
 }
-
-
-
-
-
-
 .scroll-content {
   display: flex;
   overflow-x: auto;

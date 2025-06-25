@@ -36,6 +36,7 @@
 
 .staticFooter{
  display:flex;
+ flex-direction:column;
  position:relative;
  background:none;
  box-sizing:border-box;
@@ -44,23 +45,27 @@
   position:relative;
   background:none;
   display:flex;
+  flex-wrap:wrap;
   flex-direction:row;
   margin-bottom:2rem;
   justify-content:space-between;
   list-style-type:none;
+  width:100%;
    li{
     background:none;
     position:relative;
     color:#666;
-    display:flex;
+    flex:1 1  auto;
     font-size:1rem;
     font-weight:bold;
+    margin:0.5rem;
    } 
  }
  h4{
   background:none;
   color:#ffffff;
   width:4rem;
+  margin-left:0.5rem;
  }
 }
 

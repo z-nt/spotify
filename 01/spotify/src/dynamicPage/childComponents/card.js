@@ -66,6 +66,7 @@ export   function CardContainer(props){
 		{ 
 		props.cards.map ((card) => (
 			<Card
+			  className={card.className}
 		          title={card.title}
 			  content={card.content} 
 			  imgUrl ={card.imgUrl}
