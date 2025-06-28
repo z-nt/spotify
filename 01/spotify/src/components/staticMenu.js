@@ -1,5 +1,5 @@
-import "./staticMenu.css";
-import {PlusButton,CreatePlayList,CreateBrowsePadcasts} from "./components/components.js";
+import "../assets/styles/staticMenu.css";
+import {PlusButton,CreatePlayList,CreateBrowsePadcasts} from "./static_Co.js";
 function StaticMenu (){
 	return (
 		<div className ="staticMenu" >

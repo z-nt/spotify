@@ -1,7 +1,7 @@
 import React from "react";
-import "./main.css";
-import TrendingSongs from "./childComponents/Trending.js";
-import PopularArtist from "./childComponents/PopularArtist.js";
+import "../assets/styles/main.css";
+import TrendingSongs from "./Trending_Co.js";
+import PopularArtist from "./PopularArtist_Co.js";
 
 
 function DynamicPage () {

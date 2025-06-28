@@ -1,7 +1,7 @@
 import React from "react";
-import "./artistStyle.css";
-import Slidercard from "./component.js";
-import {HorizontallScroll} from "./card.js";
+import "../assets/styles/artistStyle.css";
+import Slidercard from "./dpComponent.js";
+import {HorizontallScroll} from "./dpCard_Co.js";
 
 
 function PopularArtist (){

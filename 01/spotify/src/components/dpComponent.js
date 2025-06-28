@@ -1,7 +1,7 @@
 import React from "react";
-import {CardContainer} from "./card.js";
+import {CardContainer} from "./dpCard_Co.js";
 //import TrendCard from "./data.js";
-import song from "./dataCenter/data.js";
+import song from "./songData.js";
 
 export default  function SliderCard (){
  const list = song; 

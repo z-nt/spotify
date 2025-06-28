@@ -1,7 +1,7 @@
-import NavbarMenu from "../navbarMenu/navbar.js";
-import StaticMenu from "../staticMenu/staticMenu.js";
-import DynamicPage from "../dynamicPage/main.js";
-import "./root.css";
+import NavbarMenu from "../components/navbar_Co.js";
+import StaticMenu from "../components/staticMenu.js";
+import DynamicPage from"../components/dpMain.js";
+import "../assets/styles/root.css";
 
 
 

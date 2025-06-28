@@ -1,5 +1,5 @@
 import React from "react";  
-import "./components.css";
+import "../assets/styles/static_CoStyle.css";
 
 
 

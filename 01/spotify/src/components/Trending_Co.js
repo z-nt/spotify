@@ -1,8 +1,8 @@
 
 import React from "react";
-import "./style.css";
-import Slidercard from "./component.js";
-import {HorizontallScroll} from "./card.js";
+import "../assets/styles/style.css";
+import Slidercard from "./dpComponent.js";
+import {HorizontallScroll} from "./dpCard_Co.js";
 function TrendingSongs () {
 	return (
 		<>

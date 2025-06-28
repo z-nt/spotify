@@ -1,7 +1,7 @@
-import albumAmir from "./images/amir.jpg";
-import albumTatality from "./images/tatality.jpg";
-import albumAngel from "./images/angel.jpg";
-import albumBoht from "./images/boht.jpg";
+import albumAmir from "../assets/images/amir.jpg";
+import albumTatality from "../assets/images/tatality.jpg";
+import albumAngel from "../assets/images/angel.jpg";
+import albumBoht from "../assets/images/boht.jpg";
 
 
 

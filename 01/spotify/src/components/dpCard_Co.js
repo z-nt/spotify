@@ -1,6 +1,5 @@
 import React , {useRef} from "react";
-import "./cardStyle.css";
-import song from "./dataCenter/data.js";
+import "../assets/styles/cardStyle.css";
 
 
 export 	function HorizontallScroll ({children}) {
