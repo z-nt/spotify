@@ -1,12 +1,22 @@
 import * as React  from "react";
 import "../assets/styles/navbar_Style.css";
 import "../assets/styles/navbar_CoStyle.css";
-
+import LoginModal from "./LoginModal.js";
+import {useState} from "react";
  
 
-
-
 function NavbarMenu (){
+  const [showLoginModal , setShowLoginModal]= useState(false);
+  
+  const handelLoginClick = () => {
+	setShowLoginModal(true);
+  }
+  
+  const handelCloseModal = () => {
+	setShowLoginModal(false);
+  }
+
+	
 	return (
 	<div className = "navbarMenu" >
 			<div className="Logo">
@@ -17,10 +27,19 @@ function NavbarMenu (){
 		</div> 
 		<ul className="navbarList" >
 		  <li className="navbarItems">		
-		hekki
+		<button onClick={handelLoginClick} className="LoginButton">
+			 Log in	
+			</button>
+
 		  </li>
 
 		</ul>
+
+			{showLoginModal && (
+				<LoginModal onClose={handelCloseModal}/>
+			)}
+
+
 	</div>
 	)
 }
