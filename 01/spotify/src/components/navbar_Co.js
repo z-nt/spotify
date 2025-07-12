@@ -19,29 +19,53 @@ function NavbarMenu (){
 	
 	return (
 	<div className = "navbarMenu" >
-			<div className="Logo">
-			</div>
-
+		<div className="Logo">
+		
+		</div>
 
 		<div className = "inputContaienr">
+
 		</div> 
+		
 		<ul className="navbarList" >
+		
 		  <li className="navbarItems">		
-		<button onClick={handelLoginClick} className="LoginButton">
+			<a className="itemsLink"> Premium </a>
+		  </li>
+
+		  <li className="navbarItems">		
+			<a className="itemsLink"> Support  </a>
+		  </li>
+
+		  <li className="navbarItems">		
+			<a className="itemsLink"> Download </a>
+		  </li>
+
+		  <li className="navbarItems">		
+			<a className="itemsLink"> | </a>
+		  </li>
+
+		  <li className="navbarItems">		
+			<a className="itemsLink"> InstallApp </a>
+		  </li>
+
+		  <li className="navbarItems">		
+			<a className="itemsLink"> Sign up </a>
+		  </li>
+
+		  <li className="navbarItems">		
+			<button onClick={handelLoginClick}
+			className="LoginButton">
 			 Log in	
 			</button>
-
 		  </li>
 
 		</ul>
-
 			{showLoginModal && (
 				<LoginModal onClose={handelCloseModal}/>
 			)}
-
-
 	</div>
-	)
-}
+	)}
+
 
 export default NavbarMenu;

@@ -19,7 +19,7 @@
  margin:1rem auto;
 }
 .navbarList {
-	border:none ;	
+	border:none;	
 	height:100%;
 	position:relative ;
 	display:flex;
@@ -38,7 +38,24 @@
 	position :relative; 
 	align-items:center;
 	margin-right:2vh;
+	color:#888888;
+	font-weight:bold;
 }
+
+.navbarItems a {
+  transition:all 0.2s ease;
+}
+
+.navbarItems a:hover {
+	color:#ffffff;
+	font-size:16px;
+	cursor:pointer;
+}
+
+
+
+
+
 
 .textButtons {
  background:none;
