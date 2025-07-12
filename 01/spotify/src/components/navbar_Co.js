@@ -3,7 +3,7 @@ import "../assets/styles/navbar_Style.css";
 import "../assets/styles/navbar_CoStyle.css";
 import LoginModal from "./LoginModal.js";
 import {useState} from "react";
- 
+import SearchInput from "./searchInput.js"; 
 
 function NavbarMenu (){
   const [showLoginModal , setShowLoginModal]= useState(false);
@@ -24,7 +24,7 @@ function NavbarMenu (){
 		</div>
 
 		<div className = "inputContaienr">
-
+			<SearchInput/>
 		</div> 
 		
 		<ul className="navbarList" >

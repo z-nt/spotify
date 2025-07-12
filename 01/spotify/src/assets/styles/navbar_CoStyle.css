@@ -12,64 +12,8 @@
   font-weight:bold;
   background:#ffffff;
 }
-.inputContaienr{ 
-  width:20%;
-  height:5vh;
-  border:none;  
-  align-items: center;
-  background-color: ;
-  border-radius: 24px;
-  padding: 0; 
-  margin:0;
-  position:relative;
-  background-color:#373D3D;
-  transition:all .5s ease;
-}
-
-.searchInput {
-  border: none ;
-  outline: none;
-  font-size: 1rem;
-  color:#ccc;
-  font-size:16px;
-  font-weight:bold;
-  position:absolute;
-  margin:0;
-  width:100%;
-  height:100%;
-  padding-left:42px;
-  transition :all .5s ease;
-  background-color:transparent;
-  border-radius:24px;
-}
-
-.inputContainer:hover {
-	background-color:#596161;
-
-}
-
-.searchInput:focus{
-	outline:2px solid white;
-	
-
-}
 
 
-
-
-
-
-.iconSearch{
-	border:none ;
-	position:absolute;
-	left:3%;
-	top:28%;
-	width:34px;
-	height:34px;
-	font-size:24px;
-	background:transparent;
-	color:#ccc;
-}
 
 
 .homeIconContainer {
