@@ -3,7 +3,9 @@ import React from "react";
 import "../assets/styles/style.css";
 import Slidercard from "./dpComponent.js";
 import {HorizontallScroll} from "./dpCard_Co.js";
+
 function TrendingSongs () {
+
 	return (
 		<>
 			<div className= "trendingContainer">

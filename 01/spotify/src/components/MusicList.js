@@ -1,24 +1,23 @@
 
 import React from "react";
-import MusicCard from "./MusicCard";
+import "../assets/styles/searchContainer.css";
 
-
-
-export default function  MusicList  ({searchTerm , musicData})  {
-	const filterMusic = musicData.filter((music) => 
-	music.title.includes(searchTerm.toLowerCase())
-	);
-
+export default function  MusicList  ({ musicData})  {	
 	return (
-		<div>
-			{filterMusic.map((music) => (
-			  <MusicCard 
-			   key={music.id}
-			   music={music}
-			   />
-			))}
+		<div className="musicSearchContainer">
+		  {musicData.length > 0 ? (
+			musicData.map((song)=> ( 
+			  <div key={song.id} >
+			  <h3>{song.title}</h3>	
+			  <p>{song.content}</p>
+			</div>
+			))
+		   ) : (
+			<p>no music found. Try another search! </p>
+		   )}
 		</div>
 	);
 }
+
 
 

@@ -1,4 +1,5 @@
 import "../assets/styles/staticMenu.css";
+import React from "react";
 import {PlusButton,CreatePlayList,CreateBrowsePadcasts} from "./static_Co.js";
 function StaticMenu (){
 	return (

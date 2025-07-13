@@ -78,7 +78,6 @@ export   function CardContainer(props){
 	)
 };
 
-console.log(<Card.title/>);
 
 
 

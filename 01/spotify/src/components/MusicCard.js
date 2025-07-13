@@ -2,11 +2,6 @@
 
 import React from "react";
 
-
-
-
-
-
 export default function MusicCard ({music}){
 	return (
 		<div className="musicCard">

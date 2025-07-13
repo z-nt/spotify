@@ -3,9 +3,10 @@ import "../assets/styles/navbar_Style.css";
 import "../assets/styles/navbar_CoStyle.css";
 import LoginModal from "./LoginModal.js";
 import {useState} from "react";
-import SearchInput from "./searchInput.js"; 
+import "../assets/styles/searchInput.css";
 
-function NavbarMenu (){
+
+function NavbarMenu ({setSearchText}){
   const [showLoginModal , setShowLoginModal]= useState(false);
   
   const handelLoginClick = () => {
@@ -24,7 +25,15 @@ function NavbarMenu (){
 		</div>
 
 		<div className = "inputContaienr">
-			<SearchInput/>
+			
+                <div className="searchInputContainer">
+                 <input
+                        className="inputSearch"
+                        placeholder="what do you want to play?"
+                        type="text"
+			onChange = {(e) => setSearchText(e.target.value)}
+                />
+                </div>
 		</div> 
 		
 		<ul className="navbarList" >
