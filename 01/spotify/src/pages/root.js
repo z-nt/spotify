@@ -37,16 +37,11 @@ function Root () {
 	return (
 	  <div className = "rootContainer"  >
 		<NavbarMenu
-		onSearch={onSearch}
-		searchText = {searchText}
 		/>
 		  <div className="rootDisplaye" > 
 		     <StaticMenu />
 		
 		     <DynamicPage  
-			onSearch={handelSearch}
-			searchText={searchText}
-			songs={filterMusic}	
 		     />
 
 		  </div>

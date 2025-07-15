@@ -76,9 +76,12 @@
 
 
 .Logo{
-	border:none ;
+	border:none  ;
+	width:2rem;
+	height:2rem;
 	position:relative;
-	margin:16px;
+	margin-left:2rem;
+	color:#ffffff;
 }
 
 

@@ -1,35 +1,107 @@
 
-
-
+.inputContainer{
+ border:none;
+ width:40rem;
+ display:flex;
+ align-items:center;
+ border-radius:24px;
+ justify-content:space-around;
+}
 
 
 .searchInputContainer{
- border:none ;
+ border:none  ;
  position:relative;
- width:30rem;
- height:3rem;
+ width:85%;
+ height:48px;
  display:flex;
  align-items:center;
- background-color:#e0e0e0;
  border-radius:24px;
+ color:#ccc;
  transition:background-color 0.3s;
- padding:12px;
+ background: #1b1e21;
+background: linear-gradient(81deg, rgba(27, 30, 33, 1) 0%, rgba(0, 0, 0, 1) 10 │0%);
+
 }
 .searchInputContainer:hover{
-	background-color:#f0f0f0;
+
+background: #1B1E21;
+background: linear-gradient(356deg, rgba(27, 30, 33, 1) 19%, rgba(51, 48, 48, 1) 100%);
 }
+
 .inputSearch{
  flex:1;
  border:none;
  outline:none;
  background-color:transparent;
- font-size:16px;
+ font-size:18px;
+ color:#888888;
+ padding-left:16px;
+ height:100%;
+ position:absolute;
+ width:100%;
+ border-radius:24px;
+ padding-left:3.6rem;
+ transition:all 0.3s ease-in-out;
 }
 
+.inputSearch:focus{
+ color:#ffffff;
+ outline:2px solid #ffffff;
+}
+.search-icon{
+	background :none;
+	font-size:24px;
+	color:#888888;
+	position:absolute;
+	left:1rem;
+	font-weight:100;
+}
+
+.browse-icon{
+	background :none;
+	font-size:24px;
+	color:#888888;
+	position:absolute;
+	right:1rem;
+	font-weight:100;
+}
+
+.homeButton{
+ border:none ; 
+ width:54px;
+ display:flex;
+ align-items:center;
+ height:52px;
+ justify-content:center;
+ border-radius:500px;
+ background: #1b1e21;
+ background: linear-gradient(81deg, rgba(27, 30, 33, 1) 0%, rgba(0, 0, 0, 1) 10 │0%);
+ position:relative;
+
+ transition:all 0.1s ease-in-out;
+ cursor:pointer;
+}
+
+.home-icon{
+ background:none;
+ flex:1;
+ width:2rem;
+ height:2rem;
+ position:absolute;
+ transition:all 0.1s ease-in-out;
+}
+
+.homeButton:hover{
+   transform:scale(1.09);
 
 
 
+background: #1B1E21;
+background: linear-gradient(356deg, rgba(27, 30, 33, 1) 19%, rgba(51, 48, 48, 1) 100%);
 
+
+}
 
 
 
