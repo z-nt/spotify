@@ -1,4 +1,3 @@
-import React from "react";
 import albumAmir from "../assets/images/amir.jpg";
 import albumTatality from "../assets/images/tatality.jpg";
 import albumAngel from "../assets/images/angel.jpg";
