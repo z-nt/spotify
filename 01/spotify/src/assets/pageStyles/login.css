@@ -47,17 +47,45 @@ background: linear-gradient(0deg, rgba(27, 30, 33, 1) 46%, rgba(51, 48, 48, 1) 1
 }
 
 .headerLoginfile{
- border:1px solid red ;
- width:8rem;
+ border:none ;
  height:2rem;
+ display:flex;
+ align-items:center;
+ padding:0;
 }
 
+.headerLoginfile h1{
+ color:#ffffff;
+}	
+	
+.continueBox{
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+}
 .continue{
- border:1px solid red ;
- width:12rem;
- height:2rem;
+ border:1px solid #888888 ;
+ width:20rem;
+ height:3rem;
+ border-radius:24px;
+ margin-top:8px;
+ display:flex;
+ align-items:center;
+ color:#fff;
+ text-align:center;
+ justify-content:center;
+ position:relative;
 }
 
+.icon-box{
+ width:2rem;
+ height:2rem;
+ display:flex;
+ align-items:center;
+ position:absolute;
+ left:16px;
+ font-size:2rem;
+}
 
 .liner{
  border:1px solid red ;
