@@ -1,15 +1,27 @@
 import React , {useState} from "react";
-import "../assets/pageStyles/login.css";
+import "../../assets/pageStyles/loginSection.css";
 import {Link} from "react-router-dom";
 import {FaGoogle , FaFacebook , FaApple } from "react-icons/fa";
 export default function Login(){
 
 	function GetEmailOrUserName() {
 		const [inputValue , setInputValue]=useState("");
-
+		const [error,setError] = useState(false);
 		const handelchange = (e) => {
 			setInputValue(e.target.value);
 		}
+
+		const handelSubmit = () => {
+		console.log("button");
+		
+		if(!inputValue.trim()) {
+		  setError(true);
+		}else{
+		  setError(false);
+		}
+		}
+
+
 	return(
 	    <div className = "input-container">
 		<label htmlFor="emailorusername" >Email or username</label>
@@ -17,10 +29,19 @@ export default function Login(){
 		   type="text"
 		   id="emailorusername"
 		   value={inputValue}
-		   onChange={handelchange}
+		   onChange={(e)=>{
+			setInputValue(e.target.value);
+			setError(false);   
+		   }}
+		   className={error ? "error-input" : " "}
 		   placeholder="Email or username "
 		/>
-		<button id="continue">
+		 {error && (
+			<p className="error-message">
+			 ! Please enter your Spotify username or email
+		        </p>
+		 )}
+		<button onClick={handelSubmit}  id="continue">
 			Continue
 		</button>
 	   </div>

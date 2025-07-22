@@ -8,7 +8,7 @@ import LoadingSpinner from "../components/LoadingSpinner.js";
 
 const Root = lazy(() => import ("./root.js"));
 
-const Login = lazy(() => import ("./login.js"));
+const Login = lazy(() => import ("./Login/login.js"));
 
 function App(){
 	return (

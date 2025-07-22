@@ -116,6 +116,7 @@ background: linear-gradient(0deg, rgba(27, 30, 33, 1) 46%, rgba(51, 48, 48, 1) 1
 .continueButton{
  width:12rem;
  height:2rem;
+
 }
 .input-container {
   margin-bottom: 1rem;
@@ -151,7 +152,7 @@ background: linear-gradient(0deg, rgba(27, 30, 33, 1) 46%, rgba(51, 48, 48, 1) 1
   border-radius: 6px;
   box-sizing: border-box;
   background:transparent;
- 
+  transition:all 0.2s ease; 
 }
 
 
@@ -163,7 +164,7 @@ background: linear-gradient(0deg, rgba(27, 30, 33, 1) 46%, rgba(51, 48, 48, 1) 1
 
 .input-container #continue {
  color:#ffffff;
- background:green;
+ background:#06923E;
  width:22rem;
  height:3rem;
  border-radius:24px;
@@ -173,8 +174,34 @@ background: linear-gradient(0deg, rgba(27, 30, 33, 1) 46%, rgba(51, 48, 48, 1) 1
  font-size:1rem;
  font-weight:bold;
  cursor:pointer;
-
+ transition:all 0.2s ease;
+ background:#347433;
 }
+
+.input-container #continue:hover{
+ width:23rem;
+ background:#06923E;
+}
+
+.error-input {
+ border-color:#e91429 !important;
+}
+
+.error-message {
+  color: #e91429;
+  font-size: 1rem;
+  margin: 8px 0 0;
+  font-weight: bold;
+  background:transparent;
+}
+
+
+
+
+
+
+
+
 
 
 

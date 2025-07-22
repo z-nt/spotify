@@ -1,7 +1,5 @@
 import * as React  from "react";
-import "../assets/styles/navbar_Style.css";
 import "../assets/styles/navbar_CoStyle.css";
-import LoginModal from "./LoginModal.js";
 import {useState} from "react";
 import "../assets/styles/searchInput.css";
 import {FaSearch,FaMusic,FaHome} from 'react-icons/fa';
@@ -58,31 +56,31 @@ function NavbarMenu (){
 		<ul className="navbarList" >
 		
 		  <li className="navbarItems">		
-			<a className="itemsLink"> Premium </a>
+			<a href="#"  className="itemsLink"> Premium </a>
 		  </li>
 
 		  <li className="navbarItems">		
-			<a className="itemsLink"> Support  </a>
+			<a href="#" className="itemsLink"> Support  </a>
 		  </li>
 
 		  <li className="navbarItems">		
-			<a className="itemsLink"> Download </a>
+			<a href="#"  className="itemsLink"> Download </a>
 		  </li>
 
 		  <li className="navbarItems">		
-			<a className="itemsLink"> | </a>
+			<a href="#" className="itemsLink"> | </a>
 		  </li>
 
 		  <li className="navbarItems">		
-			<a className="itemsLink"> InstallApp </a>
+			<a href="#" className="itemsLink"> InstallApp </a>
 		  </li>
 
 		  <li className="navbarItems">		
-			<a className="itemsLink"> Sign up </a>
+			<a href="#" className="itemsLink"> Sign up </a>
 		  </li>
 
-		  <li className="navbarItems">
-		   <Link to ="/Login">
+		  <li className="navbarItems loginItem">
+		   <Link className="loginLink" to ="/Login">
 			<button onClick={handelLoginClick}
 			className="LoginButton">
 			 Log in	
@@ -91,9 +89,6 @@ function NavbarMenu (){
 		  </li>
 
 		</ul>
-			{showLoginModal && (
-				<LoginModal onClose={handelCloseModal}/>
-			)}
 	</div>
 	)}
 
