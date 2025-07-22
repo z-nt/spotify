@@ -1,8 +1,33 @@
-import React from "react";
+import React , {useState} from "react";
 import "../assets/pageStyles/login.css";
 import {Link} from "react-router-dom";
 import {FaGoogle , FaFacebook , FaApple } from "react-icons/fa";
 export default function Login(){
+
+	function GetEmailOrUserName() {
+		const [inputValue , setInputValue]=useState("");
+
+		const handelchange = (e) => {
+			setInputValue(e.target.value);
+		}
+	return(
+	    <div className = "input-container">
+		<label htmlFor="emailorusername" >Email or username</label>
+		<input
+		   type="text"
+		   id="emailorusername"
+		   value={inputValue}
+		   onChange={handelchange}
+		   placeholder="Email or username "
+		/>
+		<button id="continue">
+			Continue
+		</button>
+	   </div>
+	    )
+	}
+
+
 
 	return (
 	   <div className="loginContainer">
@@ -48,10 +73,18 @@ export default function Login(){
 				<h4>Continue With Google</h4>
 			</div>
 			</div>
-			<div className="liner" > </div>	
-			<div className="EmailInput" > </div>	
-			<div className="continueButton" > </div>	
-			<div className="footer" > </div>	
+
+			<div className="liner" ></div>	
+
+			<div className="EmailInput" >
+				<GetEmailOrUserName/>				
+			</div>	
+			<div className="footer">
+			<button className="footerButton">Dont have an account? 
+
+		           <span> Sing Up For Spotify. </span>
+			</button>		
+			</div>	
 		</div>
 	  </div>
 
