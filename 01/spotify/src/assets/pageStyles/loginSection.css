@@ -83,7 +83,10 @@ background: linear-gradient(0deg, rgba(27, 30, 33, 1) 46%, rgba(51, 48, 48, 1) 1
    background:transparent; 
   }
 }
-
+.continue:hover{
+  cursor:pointer;
+  border:1px solid #fff; 
+}
 .icon-box{
  width:2rem;
  height:2rem;
@@ -91,7 +94,7 @@ background: linear-gradient(0deg, rgba(27, 30, 33, 1) 46%, rgba(51, 48, 48, 1) 1
  align-items:center;
  position:absolute;
  left:16px;
- font-size:2rem;
+ font-size:1.3rem;
  background:transparent;
 }
 .google-icon,.apple-icon,.facebook-icon {
@@ -116,8 +119,18 @@ background: linear-gradient(0deg, rgba(27, 30, 33, 1) 46%, rgba(51, 48, 48, 1) 1
 .continueButton{
  width:12rem;
  height:2rem;
+}
+
+
+.continueButton:hover{
+ border:1px solid #ccc;
+ cursor:pointer;
+
 
 }
+
+
+
 .input-container {
   margin-bottom: 1rem;
   background:transparent;
@@ -161,7 +174,14 @@ background: linear-gradient(0deg, rgba(27, 30, 33, 1) 46%, rgba(51, 48, 48, 1) 1
   font-size:1rem;
 }
 
+.input-container input:hover{
+  outline:1px solid #fff !important ;
+  border:1px solid #ddd;
+  cursor:pointer;
 
+
+
+}
 .input-container #continue {
  color:#ffffff;
  background:#06923E;
@@ -195,16 +215,6 @@ background: linear-gradient(0deg, rgba(27, 30, 33, 1) 46%, rgba(51, 48, 48, 1) 1
   background:transparent;
 }
 
-
-
-
-
-
-
-
-
-
-
 .footer{
  width:22rem;
  height:4rem;
@@ -230,7 +240,14 @@ background: linear-gradient(0deg, rgba(27, 30, 33, 1) 46%, rgba(51, 48, 48, 1) 1
  cursor:pointer;
  }
 
-
+ span:hover{
+ 
+ 
+ color:#06923E;
+ 
+ text-decoration:underline 1px #06923E ; 
+ 
+ }
 
 }
 

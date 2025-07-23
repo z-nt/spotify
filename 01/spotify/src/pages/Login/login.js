@@ -2,60 +2,13 @@ import React , {useState} from "react";
 import "../../assets/pageStyles/loginSection.css";
 import {Link} from "react-router-dom";
 import {FaGoogle , FaFacebook , FaApple } from "react-icons/fa";
+import {GetEmailFromUser} from "./components/componentsForLogin.js";
 export default function Login(){
-
-	function GetEmailOrUserName() {
-		const [inputValue , setInputValue]=useState("");
-		const [error,setError] = useState(false);
-		const handelchange = (e) => {
-			setInputValue(e.target.value);
-		}
-
-		const handelSubmit = () => {
-		console.log("button");
-		
-		if(!inputValue.trim()) {
-		  setError(true);
-		}else{
-		  setError(false);
-		}
-		}
-
-
-	return(
-	    <div className = "input-container">
-		<label htmlFor="emailorusername" >Email or username</label>
-		<input
-		   type="text"
-		   id="emailorusername"
-		   value={inputValue}
-		   onChange={(e)=>{
-			setInputValue(e.target.value);
-			setError(false);   
-		   }}
-		   className={error ? "error-input" : " "}
-		   placeholder="Email or username "
-		/>
-		 {error && (
-			<p className="error-message">
-			 ! Please enter your Spotify username or email
-		        </p>
-		 )}
-		<button onClick={handelSubmit}  id="continue">
-			Continue
-		</button>
-	   </div>
-	    )
-	}
-
-
-
 	return (
 	   <div className="loginContainer">
 		<div className="loginBox">
 		  <Link className="linkTag"  to ="/">
 			<div   className="logo">
-
 		 	      <svg
 			      xmlns="http://www.w3.org/2000/svg"
       			      viewBox="0 0 496 496"
@@ -73,16 +26,16 @@ export default function Login(){
 			<div className="continueBox">	
 			<div className="continue google" >
 				<span className="icon-box">
-				<FaGoogle className="google-icon" />
+<FaGoogle style={{color:"orange"}}  className="google-icon" />
 				</span>
 				<h4>Continue With Google</h4>
 			</div>	
 			<div className="continue Facebook" >
 				
 				<span className="icon-box">
-				<FaFacebook className="facebook-icon" />
+<FaFacebook style={{color:"#1877f2"}}  className="facebook-icon" />
 				</span>
-				<h4>Continue With Google</h4>
+				<h4>Continue With FaceBook</h4>
 
 			</div>	
 
@@ -98,11 +51,15 @@ export default function Login(){
 			<div className="liner" ></div>	
 
 			<div className="EmailInput" >
-				<GetEmailOrUserName/>				
+			    <GetEmailFromUser
+				textLabel={"Email or username"}
+				textPlaceHolder={"Email or username"}
+				textButton={"Continue"}
+				idName={"continue"}
+			    />					
 			</div>	
 			<div className="footer">
-			<button className="footerButton">Dont have an account? 
-
+			<button className="footerButton">Dont have an account?
 		           <span> Sing Up For Spotify. </span>
 			</button>		
 			</div>	
