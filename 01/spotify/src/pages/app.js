@@ -9,8 +9,14 @@ import LoadingSpinner from "../components/LoadingSpinner.js";
 const Root = lazy(() => import ("./root.js"));
 
 const Login = lazy(() => import ("./Login/login.js"));
+const SignUp = lazy(()=> import ("./Login/signUp.js"));
+
+
+
 
 function App(){
+
+
 	return (
 		<Routes>
 		   <Route 
@@ -27,6 +33,15 @@ function App(){
 			element ={
 			   <Suspense fallback={<LoadingSpinner/>}>
 			    <Login/>
+			   </Suspense>
+			} 
+		  />
+
+		   <Route 
+			path="/signUp"
+			element ={
+			   <Suspense fallback={<LoadingSpinner/>}>
+			    <SignUp/>
 			   </Suspense>
 			} 
 		  />

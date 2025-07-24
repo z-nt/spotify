@@ -1,0 +1,146 @@
+
+/*display*/
+.d-flex{display:flex;}
+.d-block{display:block;}
+.d-flex-row{flex-direction:row;}
+.d-flex-col{flex-direction:column;}
+.items-center{align-items:center;}
+.justify-center{justify-content:center;}
+.justify-between{justify-content:space-between;}
+.justify-around{justify-content:space-around;}
+.justify-evenly{justify-content:space-evenly;}
+/*borders*/
+.non-border{border:none;}
+/*width and height */
+.w100{width:100%;}
+.h100{height:100vh;}
+.header-h{height:2rem};
+.red-bor{border:1px solid red; }
+/*position*/
+.pos-rel{position:relative;}
+/*background*/
+.bg-transparent{background:transparent;}
+.bg-home-{background:#1b1e21;}
+.bg-red{
+  background:red;
+}
+/*mouse-styles */
+.cursor-pin{cursor:pointer;}
+/*font-styles */
+.fw-bold{font-weight:bold;}
+.fs-lg{font-size:24px;}
+.fs-md{font-size:18px;}
+.fs-sm{font-size:12px;}
+.text-center{text-align:center;}
+
+
+/*continue button link to google facebook apple */
+.btn-link{
+ border:1px solid #888888;
+ width:20rem;
+ height:3rem;
+ border-radius:24px;
+ color:#fff;
+ display:flex;
+ text-align:center;
+ justify-content:center;
+ position:relative;
+ margin-top:8px;
+ align-items:center;
+}
+.btn-link:hover{
+  cursor:pointer;
+  border:1px solid #fff;
+}
+
+.icon-box{
+ width:2rem;
+ height:2rem;
+ display:flex;
+ align-items:center;
+ position:absolute;
+ left:16px;
+ font-size:1.3rem;
+ background:transparent;
+}
+
+/*continue button link to google facebook apple */
+
+
+/*continue button styles */
+.btn-cont {
+ border:1px solid #888888;
+ width:20rem;
+ height:3rem;
+ border-radius:24px;
+ margin-top:8px;
+ position:relative;
+ align-items:center;
+ text-align:center;
+}
+.btn-cont:hover{
+ cursor:pointer;
+ border:1px solid #ffffff ;
+}
+
+.btn-submited{
+ color:#ffffff;
+ background:#06923E;
+ width:22rem;
+ height:3rem;
+ margin-top:1rem;
+ border-radius:24px;
+ outline:none;
+ border:none;
+ transition:all 0.2s ease;
+ background:#347433;
+}
+
+.btn-submited:hover {
+ background:#06923E;
+ cursor:pointer;
+}
+/*continue button styles */
+
+
+.center-box{
+ position:relative;
+ margin:1rem auto;
+
+}
+
+
+
+.signUp-footer{
+ width:22rem;
+ height:4rem;
+ background:transparent;
+ display:flex;
+ align-items:center;
+ .footerButton{
+  background:transparent;
+  width:100%;
+  height:100%;
+  font-size:1rem;
+  color:#888888;
+  font-weight:bold;
+  border:none;
+  outline:none;
+  cursor:pointer;
+ }
+ span{
+ background:transparent;
+ color:#ffffff;
+ font-weight:bold;
+ text-decoration:underline 1px #fff ;
+ cursor:pointer;
+ }
+ span:hover{
+ color:#06923E;
+ text-decoration:underline 1px #06923E ;
+
+ }
+     
+
+
+}

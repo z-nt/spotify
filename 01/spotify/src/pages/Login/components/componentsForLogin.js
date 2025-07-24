@@ -2,7 +2,7 @@ import React  , {useState}from "react";
 import "../../../assets/pageStyles/loginSection.css";
 
 
-const GetEmailFromUser = ({textLabel,textPlaceHolder,textButton,idName}) => {
+const GetEmailFromUser = ({textLabel,textPlaceHolder,textButton,idName,className}) => {
 	const [inputValue , setInputValue] = useState("");
 	const [error,setError] = useState(false);
 	
@@ -35,7 +35,7 @@ const GetEmailFromUser = ({textLabel,textPlaceHolder,textButton,idName}) => {
                          ! Please enter your Spotify username or email
                         </p>
                  )}
-		  <button onClick = {handelSubmit} id={idName}>
+		  <button className={className}     onClick = {handelSubmit} id={idName}>
 		   {textButton}
 		  </button>
 		</div>

@@ -1,12 +1,11 @@
 import * as React  from "react";
-import "../assets/styles/navbar_CoStyle.css";
 import {useState} from "react";
 import "../assets/styles/searchInput.css";
 import {FaSearch,FaMusic,FaHome} from 'react-icons/fa';
 import {Link} from "react-router-dom";
-
-
-
+import "../assets/css/variable.css";
+import "../assets/css/utilities.css";
+import "../assets/styles/navbar_CoStyle.css";
 
 function NavbarMenu (){
   const [showLoginModal , setShowLoginModal]= useState(false);
@@ -21,7 +20,7 @@ function NavbarMenu (){
 
 	
 	return (
-	<div className = "navbarMenu" >
+<div className = "navbarMenu">
 		<div className="Logo">
 		
 		<svg 

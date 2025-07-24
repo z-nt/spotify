@@ -48,7 +48,7 @@ export default function Login(){
 			</div>
 			</div>
 
-			<div className="liner" ></div>	
+			<div className="lineLogin" ></div>	
 
 			<div className="EmailInput" >
 			    <GetEmailFromUser
@@ -59,9 +59,11 @@ export default function Login(){
 			    />					
 			</div>	
 			<div className="footer">
+		<Link to="/signUp">
 			<button className="footerButton">Dont have an account?
 		           <span> Sing Up For Spotify. </span>
-			</button>		
+			</button>
+		</Link>
 			</div>	
 		</div>
 	  </div>

@@ -1,0 +1,23 @@
+
+
+:root{
+
+ --background:#1b1e21;
+ --background-liner: linear-gradient(81deg, rgba(27, 30, 33, 1) 0%, rgba(0, 0, 0, 1) 10
+                                                                               │0%);
+
+
+
+
+/*Text-style*/
+--header-color:#888888;
+--header-hover-color:#ffffff;
+--header-font-size:1rem;
+
+
+
+/*border-radius*/
+ --border-radius-lg:12px;
+ --border-radius-md:8px;
+ --border-radius-sm:6px;
+}

@@ -101,10 +101,10 @@ background: linear-gradient(0deg, rgba(27, 30, 33, 1) 46%, rgba(51, 48, 48, 1) 1
  background:transparent;
 }
 
-.liner{
- border:0.5px solid #888888 ;
+.lineLogin{
+ background-color: #888888 ;
  width:28rem;
- height:2px;
+ height:1px;
 }
 
 .EmailInput{
@@ -239,12 +239,8 @@ background: linear-gradient(0deg, rgba(27, 30, 33, 1) 46%, rgba(51, 48, 48, 1) 1
  text-decoration:underline 1px #fff ; 
  cursor:pointer;
  }
-
- span:hover{
- 
- 
+ span:hover{ 
  color:#06923E;
- 
  text-decoration:underline 1px #06923E ; 
  
  }
