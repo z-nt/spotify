@@ -221,6 +221,11 @@ background: linear-gradient(0deg, rgba(27, 30, 33, 1) 46%, rgba(51, 48, 48, 1) 1
  background:transparent;
  display:flex;
  align-items:center;
+.linkTag{
+  background:transparent;
+ 
+ 
+ }
  .footerButton{
   background:transparent;
   width:100%;

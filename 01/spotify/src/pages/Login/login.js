@@ -59,7 +59,7 @@ export default function Login(){
 			    />					
 			</div>	
 			<div className="footer">
-		<Link to="/signUp">
+		<Link to="/signUp" className="linkTag" >
 			<button className="footerButton">Dont have an account?
 		           <span> Sing Up For Spotify. </span>
 			</button>
