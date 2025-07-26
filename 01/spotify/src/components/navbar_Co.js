@@ -75,8 +75,10 @@ function NavbarMenu (){
 		  </li>
 
 		  <li className="navbarItems">		
+		<Link to="/signUp" > 
 			<a href="#" className="itemsLink"> Sign up </a>
-		  </li>
+		</Link>  
+		</li>
 
 		  <li className="navbarItems loginItem">
 		   <Link className="loginLink" to ="/Login">
