@@ -7,8 +7,8 @@ import "../assets/styles/main.css";
 function DynamicPage ({searchQuery}) {
 	return (
 		<div className ="dynamicPage" >
-		        {searchQuery && (
-  <div className="searchResult ">
+{searchQuery && (
+		  <div className="searchResult ">
 			<ul className="navbar-result">
 			    <li className="navbar-result-items active-btn ">
 			       <button>All</button>
@@ -52,8 +52,11 @@ function DynamicPage ({searchQuery}) {
 
 				
 
-                                {searchQuery.length > 0 ? (		
+                      {searchQuery.length > 0 ? (
+			      
                                  searchQuery.map(song=> (
+
+				console.log(song.id),
 			 <div key={song.id}  className="search-Result-items" >
 								 
                                 <div className="result-info">
