@@ -21,6 +21,7 @@ overflow-x:hidden;
  height:100%;
  background:transparent;
  .navbar-result{
+	 margin:1rem ;
   list-style-type:none;
   background:transparent;
   display:flex;
@@ -64,6 +65,19 @@ overflow-x:hidden;
  color:#222222  !important; 
  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .TrendingContainer {

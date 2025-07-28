@@ -1,7 +1,7 @@
 import React from "react";
-import {useState} from "react";
 import TrendingSongs from "./Trending_Co.js";
 import PopularArtist from "./PopularArtist_Co.js";
+import SongResult from "./songResult.js";
 import "../assets/css/utilities.css";
 import "../assets/styles/main.css";
 function DynamicPage ({searchQuery}) {
@@ -48,14 +48,20 @@ function DynamicPage ({searchQuery}) {
 			    <li className="navbar-result-items">
 			       <button>Audibooks</button>
 			    </li>
-
 			</ul>
+
+				
 
                                 {searchQuery.length > 0 ? (		
                                  searchQuery.map(song=> (
- <div key={song.id}  className="search-Result-items" >
+			 <div key={song.id}  className="search-Result-items" >
 								 
                                 <div className="result-info">
+				 <SongResult 
+				   cardMusic={song}   
+				 />
+
+
                                 </div>
                          </div>
                                  ))
