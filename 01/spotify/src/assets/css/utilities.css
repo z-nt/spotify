@@ -9,6 +9,20 @@
 .justify-between{justify-content:space-between;}
 .justify-around{justify-content:space-around;}
 .justify-evenly{justify-content:space-evenly;}
+
+.box-d-f-c{
+ display:flex;
+ flex-direction:row;
+ justify-content:space-around;
+}
+
+
+/*colors*/
+.text-w{
+ color:#fff;
+}
+
+
 /*borders*/
 .non-border{border:none;}
 /*width and height */
@@ -17,8 +31,6 @@
 .header-h{height:2rem;}
 .red-bor{
 border:1px solid red;
-
-
 }
 /*position*/
 .pos-rel{position:relative;}

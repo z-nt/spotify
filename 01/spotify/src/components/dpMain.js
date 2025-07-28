@@ -8,15 +8,54 @@ function DynamicPage ({searchQuery}) {
 	return (
 		<div className ="dynamicPage" >
 		        {searchQuery && (
-  <div className="searchResult bg-home">
+  <div className="searchResult ">
+			<ul className="navbar-result">
+			    <li className="navbar-result-items active-btn ">
+			       <button>All</button>
+			    </li>
+
+			    <li className="navbar-result-items">
+			       <button>Songs</button>
+			    </li>
+
+
+			    <li className="navbar-result-items">
+			       <button>Artist</button>
+			    </li>
+
+
+			    <li className="navbar-result-items">
+			       <button>Playlists</button>
+			    </li>
+
+
+			    <li className="navbar-result-items">
+			       <button>Albums</button>
+			    </li>
+
+			    <li className="navbar-result-items">
+			       <button>Podcasts & Shows</button>
+			    </li>
+
+			    <li className="navbar-result-items">
+			       <button>Genres & Moods</button>
+			    </li>
+
+			    <li className="navbar-result-items">
+			       <button>Profiles</button>
+			    </li>
+
+			    <li className="navbar-result-items">
+			       <button>Audibooks</button>
+			    </li>
+
+			</ul>
 
                                 {searchQuery.length > 0 ? (		
                                  searchQuery.map(song=> (
  <div key={song.id}  className="search-Result-items" >
 								 
                                 <div className="result-info">
-                                        <h4>{song.title}</h4>
-                                        <h5>{song.albumstitle}</h5>
                                 </div>
                          </div>
                                  ))
