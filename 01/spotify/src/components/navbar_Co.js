@@ -6,19 +6,41 @@ import {Link} from "react-router-dom";
 import "../assets/css/variable.css";
 import "../assets/css/utilities.css";
 import "../assets/styles/navbar_CoStyle.css";
+import song from "./songData.js";
 
-function NavbarMenu (){
-  const [showLoginModal , setShowLoginModal]= useState(false);
-  
-  const handelLoginClick = () => {
-	setShowLoginModal(true);
-  }
-  
-  const handelCloseModal = () => {
-	setShowLoginModal(false);
-  }
 
-	
+
+
+function NavbarMenu ({onSearchChange}){
+
+	const list = song ;
+	const music = list[0].albums.songs;
+	const [searchText , setSearchText] = useState("");
+	const [searchResult,setSearchResult] = useState([]);
+	const [isSearching , setIsSearching] = useState(false);
+ 
+
+
+	const handelSearch = (e) => {
+	  const text = e.target.value.toLowerCase();
+	   setSearchText(text)
+		
+		if(text.length > 0 ) {
+			setIsSearching(true);
+			const result = music.filter(
+			  song => song.title.toLowerCase().includes(text) || 
+			  song.albumstitle.toLowerCase().includes(text)   ||
+			  song.content.toLowerCase().includes(text)
+			);
+			setSearchResult(result);
+			onSearchChange(result);
+		}else{
+		 setIsSearching(false);
+		 setSearchResult([]);
+		 onSearchChange("");	
+		}
+	};
+
 	return (
 <div className = "navbarMenu">
 		<div className="Logo">
@@ -47,7 +69,11 @@ function NavbarMenu (){
                         className="inputSearch"
                         placeholder="what do you want to play ?"
                         type="text"
+			value={searchText}
+			onChange={handelSearch}
                 />
+			
+
 		<FaMusic className="browse-icon" />
                 </div>
 		</div> 
@@ -82,7 +108,7 @@ function NavbarMenu (){
 
 		  <li className="navbarItems loginItem">
 		   <Link className="loginLink" to ="/Login">
-			<button onClick={handelLoginClick}
+			<button 
 			className="LoginButton">
 			 Log in	
 			</button>

@@ -14,13 +14,22 @@
 /*width and height */
 .w100{width:100%;}
 .h100{height:100vh;}
-.header-h{height:2rem};
-.red-bor{border:1px solid red; }
+.header-h{height:2rem;}
+.red-bor{
+border:1px solid red;
+
+
+}
 /*position*/
 .pos-rel{position:relative;}
 /*background*/
 .bg-transparent{background:transparent;}
-.bg-home-{background:#1b1e21;}
+
+.bg-home{
+background:#1b1e21;
+
+}
+
 .bg-red{
   background:red;
 }
@@ -138,9 +147,16 @@
  span:hover{
  color:#06923E;
  text-decoration:underline 1px #06923E ;
-
  }
-     
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
