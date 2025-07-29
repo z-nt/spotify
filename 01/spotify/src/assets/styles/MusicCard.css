@@ -1,0 +1,74 @@
+
+
+
+.musicCard {
+ background:none;
+ margin-top:2rem;
+ display:flex;
+ flex-direction:row;
+ justify-content:space-between;
+ width:100%;
+ height:5rem;
+ h3,h5{
+  background:transparent;
+ }
+}
+
+.music-info{
+ display:flex;
+ flex-direction:row;
+ width:30%;
+ height:100%;
+ background:transparent;
+ justify-content:space-between;
+ .information{
+  width:100%;
+  height:100%;
+  display:flex; 
+  flex:row;
+  background:none; 
+  .info-text {
+   background:transparent; 
+   display:flex;
+   flex-direction:column;
+   justify-content:space-around;
+   margin-left:1rem;
+  }
+ }
+  img{
+   width:5rem;
+   height:5rem;
+   background:none;
+  }
+}
+
+.music-option{
+ width:30%;
+ height:100%;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ position:relative;
+ background:none;
+}
+.option-buttons{
+ display:flex;
+ flex-direction:row ;
+ align-items:center;
+ justify-content:space-around;
+ position:relative;
+ width:100%; 
+ background:none;
+}
+
+
+
+
+
+
+
+
+
+
+

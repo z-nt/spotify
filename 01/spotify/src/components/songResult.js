@@ -3,7 +3,11 @@ import "../assets/styles/songResult.css";
 
 
 
-function SongResult({cardMusic}){
+function TopResult({cardMusic}){
+
+
+
+
 
 	return(
 		<div className="result-container">
@@ -22,10 +26,8 @@ function SongResult({cardMusic}){
 
 			</div>
 
-			<div className="song-result">
 
  		
-			</div>
 		</div>
 
 	)
@@ -33,4 +35,4 @@ function SongResult({cardMusic}){
 
 
 
-export default SongResult;
+export default TopResult;

@@ -1,10 +1,11 @@
 import React from "react";
 import TrendingSongs from "./Trending_Co.js";
 import PopularArtist from "./PopularArtist_Co.js";
-import SongResult from "./songResult.js";
+import TopResult from "./songResult.js";
+import MusicCard from "./MusicCard.js";
 import "../assets/css/utilities.css";
 import "../assets/styles/main.css";
-function DynamicPage ({searchQuery}) {
+function DynamicPage ({searchQuery,tpResult}) {
 	return (
 		<div className ="dynamicPage" >
 {searchQuery && (
@@ -50,30 +51,39 @@ function DynamicPage ({searchQuery}) {
 			    </li>
 			</ul>
 
-				
-
-                      {searchQuery.length > 0 ? (
-			      
-                                 searchQuery.map(song=> (
-
-				console.log(song.id),
-			 <div key={song.id}  className="search-Result-items" >
-								 
-                                <div className="result-info">
-				 <SongResult 
-				   cardMusic={song}   
+		
+	<div className="top-result-container "> 
+		<div   className="search-Result-items" >		
+	
+		<h1 className="search-music-header">Top result</h1>
+				<div className="result-info">
+				 <TopResult 
+				   cardMusic={tpResult}   
 				 />
-
-
                                 </div>
-                         </div>
-                                 ))
-                                ): (
-                                <div>
-				
-				No results found For {searchQuery}
+                         </div>               
+
+	<div className="other-list-music">
+	
+		<h1 className="search-music-header">Songs</h1>
+		<div className="list-of-songs">
+		{searchQuery.length > 0 ? (
+			searchQuery.map(music => (
+				<div className="bg-transparent">
+				   <MusicCard music={music} />	
 				</div>
-                                )}
+			))
+		):(
+
+		<h1>not found </h1>
+
+		)}
+		</div>
+	</div>
+
+	</div>
+
+
                         </div>
                 )}
 

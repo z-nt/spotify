@@ -13,7 +13,7 @@ function Root () {
 	setSearchQuery(query)
   }
 
-
+   const topResult = searchQuery.length > 0 ? searchQuery[0]:null; 
 
 
 	return (
@@ -25,6 +25,7 @@ function Root () {
 		     <StaticMenu />
 		
 		     <DynamicPage  
+		      tpResult={topResult}
 		      searchQuery={searchQuery}
 		     />
 

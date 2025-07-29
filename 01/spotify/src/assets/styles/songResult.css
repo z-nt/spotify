@@ -7,11 +7,11 @@
  display:flex;
  margin:2rem auto;
  flex-direction:row;
- background:none;
+ background:transparent;
+ background-color:transparent;
 }
 
 .top-result{
- border:1px solid green ;
  width:40%;
  height:100%;
  position:relative;
@@ -23,7 +23,6 @@
     background:transparent;
     }
   .showCard{
-    border:1px solid red ;
     width:100%;
     background:none;
     display:flex;
@@ -34,7 +33,6 @@
      background:none;
      width:8rem;
      height:8rem;
-     border:1px solid gray ; 
      position:relative; 
      img{
        width:8rem;
@@ -54,19 +52,15 @@
   
   }
 
-
-
-
 }
 
 .song-result{
-border:1px solid red ;
 display:flex;
 flex-direction:column;
 position:relative;
 width:60%;
-height:100%;
-background:none;
+height:27vh;
+background:transparent;
 }
 
 
