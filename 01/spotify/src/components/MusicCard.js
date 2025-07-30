@@ -23,9 +23,9 @@ export default function MusicCard ({music}){
 
 		<div className="music-option">
 		    <div className="option-buttons">
-				<button>+</button>
+		<span className="box-hidden"><button>+</button></span> 
 				   <h5>{music.time}</h5>
-				<button>...</button>
+		<span  className="box-hidden"><button>...</button></span>
 		     </div>
 		</div>
 	</div>

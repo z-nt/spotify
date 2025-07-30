@@ -4,32 +4,28 @@ import "../assets/styles/songResult.css";
 
 
 function TopResult({cardMusic}){
-
-
-
-
-
 	return(
 		<div className="result-container">
 			<div className="top-result">
-			  <h1>Top result</h1>
-
 			   <div className="showCard">
   				<div className="showimage">
 			     <img src= {cardMusic.imgUrl}/>
 				</div>
-				<h3>{cardMusic.title}</h3>
+				<h1>{cardMusic.title}</h1>
 				<p>song.<span className="artistName">
 					{cardMusic.albumstitle}
 				</span></p>
 			   </div>
 
 			</div>
+		      <div className="play-button">  
+				<button>
+			<i className="fas fa-play-circle  play-btn "> </i>
+				</button>
+   				
+			</div>
 
-
- 		
 		</div>
-
 	)
 }
 
