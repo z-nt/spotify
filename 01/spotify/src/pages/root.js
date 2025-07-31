@@ -4,6 +4,7 @@ import React from "react";
 import NavbarMenu from "../components/navbar_Co.js";
 import StaticMenu from "../components/staticMenu.js";
 import DynamicPage from"../components/dpMain.js";
+import Footer from "../components/footer.js";
 import "../assets/styles/root.css";
 
 
@@ -21,14 +22,13 @@ function Root () {
 		<NavbarMenu
 		onSearchChange={handelSearchChange}
 		/>
+		<StaticMenu/>
 		  <div className="rootDisplaye" > 
-		     <StaticMenu />
 		
 		     <DynamicPage  
 		      tpResult={topResult}
 		      searchQuery={searchQuery}
 		     />
-
 		  </div>
 	  </div>
 	)

@@ -7,8 +7,9 @@ import "../assets/css/utilities.css";
 import "../assets/styles/main.css";
 function DynamicPage ({searchQuery,tpResult}) {
 	return (
-		<div className ="dynamicPage" >
-{searchQuery && (
+		<div className ="dynamicPage">
+		   <div className="scroll">
+		   {searchQuery && (
 		  <div className="searchResult ">
 			<ul className="navbar-result">
 			    <li className="navbar-result-items active-btn ">
@@ -98,8 +99,9 @@ function DynamicPage ({searchQuery,tpResult}) {
 			<div className="PopularContainer"  >
 				<PopularArtist/>	
 			</div>					
-		
+	     		<div className="footer">  </div>	
 		</div>	
+		</div>
 	)
 
 }
