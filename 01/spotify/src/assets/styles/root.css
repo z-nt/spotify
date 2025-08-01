@@ -1,7 +1,6 @@
 *{
 	margin:0;
 	padding:0;
-	background-color:black;
 }
 
 .rootContainer {
@@ -12,16 +11,17 @@
   	min-height:0;
 	flex-wrap:wrap;
 	overflow:hidden;
-	border:none;
+	background:black;
 }
 
 .rootDisplaye {
 	justify-content : space-between;
-	width :69%;
-	height:85vh;
+	width :74%;
+	height:92vh;
 	overflow:hidden;
         border-radius:12px;
 	margin-left:1rem; 
-	border:none ;
+	border:none  ;
+	margin-top:0;
 }
 

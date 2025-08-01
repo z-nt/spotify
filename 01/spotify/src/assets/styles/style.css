@@ -18,29 +18,40 @@
 
 .header h1 {
  background:none;
+ font-size:1.5rem;
 }
+
+.header h1:hover{
+ border-bottom:1px solid #fff;
+ cursor:pointer;
+
+}
+
+
 
 .slider {
  width:100%; 
  height:auto;
  background-color:transparent;
+ background:transparent;
 }
 
 
 .show {
- border:none ;
+ border:none  ;
  background-color:transparent;
  color:#ccc;
  background:none;
  font-size:16px;
  font-weight:bold;
  transition:all .5s ease;
- margin-right:1rem;
+ margin-right:4rem;
 }
 
 .show:hover {
 cursor:pointer;
 color:#fff;
+border-bottom:1px solid #fff;
 }
 
 

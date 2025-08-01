@@ -57,12 +57,14 @@ function NavbarMenu ({onSearchChange}){
 		</div>
 
 		<div className = "inputContainer">
+
+                <div className="searchInputContainer">
+
 		 <div className="homeButton">
 			<FaHome className="home-icon" />
 		</div>
 
-
-                <div className="searchInputContainer">
+	<div className="items-container" >
 		<FaSearch className="search-icon"/>
 		<input
 
@@ -76,8 +78,8 @@ function NavbarMenu ({onSearchChange}){
 
 		<FaMusic className="browse-icon" />
                 </div>
-		</div> 
-		
+		</div>
+ 
 		<ul className="navbarList" >
 		
 		  <li className="navbarItems">		
@@ -116,6 +118,10 @@ function NavbarMenu ({onSearchChange}){
 		  </li>
 
 		</ul>
+		 </div>
+
+
+
 	</div>
 	)}
 
