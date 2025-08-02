@@ -3,6 +3,7 @@ import TrendingSongs from "./Trending_Co.js";
 import PopularArtist from "./PopularArtist_Co.js";
 import TopResult from "./songResult.js";
 import MusicCard from "./MusicCard.js";
+import Footer from "./footer.js";
 import "../assets/css/utilities.css";
 import "../assets/styles/main.css";
 function DynamicPage ({searchQuery,tpResult}) {
@@ -99,7 +100,9 @@ function DynamicPage ({searchQuery,tpResult}) {
 			<div className="PopularContainer"  >
 				<PopularArtist/>	
 			</div>					
-	     		<div className="footer">  </div>	
+	     		<div className="footer">
+				<Footer/>
+			</div>	
 		</div>	
 		</div>
 	)

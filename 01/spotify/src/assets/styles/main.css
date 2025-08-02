@@ -1,4 +1,5 @@
 .dynamicPage {	
+
 	border:none ;
 	width:100%;
 	height:100vh;
@@ -9,6 +10,9 @@ background: linear-gradient(81deg, rgba(27, 30, 33, 1) 0%, rgba(0, 0, 0, 1) 100%
 display:flex;
 flex-direction:column;
 min-height:0;
+
+
+
 .scroll {
  width:100%;
  height:150vh;
@@ -19,6 +23,39 @@ min-height:0;
 }
 
 
+.scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #4CAF50; /* Green thumb */
+}
+
+/* For WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
 
 
 
@@ -147,13 +184,14 @@ background-color:transparent;
  order:3;
 }
 .footer {
- border:1px solid red ; 
+ border:none ; 
  position:relative;
  width:100%;
- height:100%;
+ height:50%;
+ border-radius:24px;
  order:4;
- margin-bottom:1rem;
  background:transparent;
+ margin:0.5rem auto;
 }
 
 
