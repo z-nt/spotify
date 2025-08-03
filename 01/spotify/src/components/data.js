@@ -5,7 +5,8 @@ const musicList = [
           id:1,
           time:"4:43",
           albumstitle:"amir",
-          imgUrl:"albumAmir"
+          imgUrl:"albumAmir",
+	  audioSrc:"../music/kooze.mp3"
                },
 
                  {

@@ -1,6 +1,8 @@
-import React , {useRef} from "react";
+import React , {useRef,useState} from "react";
+import {forwardRef , useImperativeHandle} from "react";
+import Player from "./player.js";
 import "../assets/styles/cardStyle.css";
-
+import PropTypes from 'prop-types';
 
 export 	function HorizontallScroll ({children}) {
   const scrollRef = useRef(null);
@@ -42,7 +44,6 @@ export 	function HorizontallScroll ({children}) {
 
 
  function  Card ( props ) { 
-	
 	return (
 		<>	
 		   <div className = "card" >
@@ -59,7 +60,13 @@ export 	function HorizontallScroll ({children}) {
 		</>
 	)
 }; 
-export   function CardContainer(props){
+export   function CardContainer(props,{onButtonclick}){
+	
+ const handleClick = () => {
+    onButtonclick('Button clicked from child!');
+  };
+
+
 	return (
 	    <div className = "cards-container" >
 		{ 
@@ -71,6 +78,7 @@ export   function CardContainer(props){
 			  imgUrl ={card.imgUrl}
 			  time = {card.time} 
 			  albumstitle={card.albumstitle}
+			  onClick={handleClick}
 			/> 
 		  ))
 		}
@@ -78,7 +86,10 @@ export   function CardContainer(props){
 	)
 };
 
-
+// Prop type validation
+CardContainer.propTypes = {
+  onButtonclick: PropTypes.func.isRequired
+};
 
 
 
